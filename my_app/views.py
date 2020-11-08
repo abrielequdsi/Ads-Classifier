@@ -20,6 +20,7 @@ def new_search(request):
     soup = BeautifulSoup(data, features='html.parser')
 
     all_posts = soup.find_all('li', {'class': 'result-row'})
+    print(all_posts)
 
     final_posts = []
 
